@@ -14,14 +14,14 @@ api=tweepy.API(auth, wait_on_rate_limit = True, wait_on_rate_limit_notify = True
 name = input('Enter twitter account: ')
 account = api.get_user(name)
 
-initial=aamc.status.text
+initial=account.status.text
 print(initial)
 
 
 def tweet_wait():
     interval = 1.
     next_t = time.time()
-    while(datetime.now().hour < 12):
+    while(datetime.now().hour < 12):  # this was specifically for a tweet that was coming before noon
         if account.status.text != initial:
             os.system('alarm.mp3')
             break
@@ -30,4 +30,4 @@ def tweet_wait():
             time.sleep(next_t - time.time())
 
 
-mcat_wait() 
+tweet_wait() 
