@@ -9,5 +9,5 @@ consumer_secret = 'CONSUMER_SECRET'
 access_token = 'ACCESS_TOKEN'  
 access_token_secret = 'ACCESS_SECRET'  
 
-Replace each string with the appropriate key. More detailed instrucitons can be found by searching 'tweepy authentication'.
+Replace each string with the appropriate key. More detailed instructions can be found by searching 'tweepy authentication'.
 
